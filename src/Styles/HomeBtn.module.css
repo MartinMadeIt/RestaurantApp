@@ -1,0 +1,13 @@
+.btn {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.474);
+    transition: 150ms;
+}
+
+.btn:hover {
+    color: white;
+}

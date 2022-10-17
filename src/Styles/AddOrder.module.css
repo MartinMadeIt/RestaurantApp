@@ -1,0 +1,122 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--bg-color-dark);
+}
+
+.home {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+.formField {
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.input {
+    width: 180px;
+    height: 60px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.add {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add:hover {
+    transform: scale(.9);
+}
+
+.add:active {
+    background-color: rgb(120, 196, 120);
+}
+
+.submit {
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 13px 3px black;
+}
+
+.final {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+
+    width: 15vw;
+    height: 400px;
+
+    overflow: hidden;
+    color: rgba(240, 248, 255, 0.372);
+    font-size: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputPhone {
+    width: 300px;
+    height: 60px;
+    border-radius: 6px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.submitBtn {
+    width: 100px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 24px;
+
+    border: 1px solid rgb(0, 181, 0);
+    background-color: rgba(118, 255, 109, 0.446);
+    color: rgb(196, 255, 181);
+    cursor: pointer;
+
+}
+
+.submitBtn:hover {
+    transform: scale(0.96);
+    background-color: rgba(42, 255, 27, 0.771);
+
+}
+
+
+.blad {
+    color: red;
+    font-size: 24px;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}

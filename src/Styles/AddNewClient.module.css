@@ -1,0 +1,59 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--bg-color-dark);
+    color: var(--font-color-dark);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 80%;
+    height: 90%;
+    border: 1px solid grey;
+    background-color: rgba(255, 255, 255, 0.529);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 12px;
+}
+
+
+.one,
+.two,
+.three,
+.four,
+.five {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.submit {
+    width: 220px;
+    height: 55px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(3, 143, 3);
+    cursor: pointer;
+    transition: 150ms;
+
+    font-size: 24px;
+    color: rgb(41, 41, 41);
+}
+
+.submit:hover {
+    transform: scale(.95);
+}
