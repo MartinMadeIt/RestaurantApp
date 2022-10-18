@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import HomeBtn from './HomeBtn';
 import styles from '../Styles/AddOrder.module.css'
-import { Link } from 'react-router-dom';
 import { postData } from '../Controllers/postDatas'
 import getAllDatas from '../Controllers/getAllDatas'
 import { TbPhoneCheck } from "react-icons/tb";
@@ -12,7 +11,6 @@ const available =  {
         "Pizza": 32,
         "Add topping": 2,
         "Pancakes": 15,
-        "Cat meat": 20,
         "Oatmeal": 10,
         "Kebab L": 32,
         "Kebab M": 25,

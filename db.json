@@ -1,122 +1,35 @@
 {
   "clients": [
     {
-      "name": "Damian",
-      "surname": "Cykcy",
-      "street": "Willow Str.",
-      "city": "Leeds",
-      "region": "LEE",
+      "name": "Person",
+      "surname": "Example",
+      "street": "Test Street",
+      "city": "York Shire",
+      "region": "TEX",
       "photoURL": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-      "email": "damcyk@gmail.com",
+      "email": "perex@ex.eu",
       "phone": "+123",
-      "age": "25",
+      "age": "45",
       "id": 1
-    },
-    {
-      "name": "xxx",
-      "surname": "x",
-      "street": "xxxxx",
-      "city": "x",
-      "region": "x",
-      "photoURL": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-      "email": "x@x.x",
-      "phone": "+123",
-      "age": "20",
-      "id": 2
-    },
-    {
-      "name": "Adolf",
-      "surname": "Ymlaut",
-      "street": "Merkel Strasse",
-      "city": "Berlin",
-      "region": "BER",
-      "photoURL": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-      "email": "adi@times.de",
-      "phone": "+124",
-      "age": "35",
-      "id": 3
-    },
-    {
-      "name": "Marek",
-      "surname": "Piekarek",
-      "street": "Znosna",
-      "city": "Radgoszcz",
-      "region": "RAD",
-      "photoURL": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-      "email": "piekarmar@op.com",
-      "phone": "+125",
-      "age": "29",
-      "id": 4
-    },
-    {
-      "name": "vrht",
-      "surname": "htnff",
-      "street": "htnfth 45",
-      "city": "htrhr",
-      "region": "PGN",
-      "photoURL": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-      "email": "hrth@fse.pl",
-      "phone": "+456",
-      "age": "43",
-      "id": 5
     }
   ],
   "orders": [
     {
       "body": [
+        "Pancakes",
         "Kebab L",
-        "Pepsi"
+        "Kebab S",
+        "7up",
+        "Mirinda"
       ],
-      "price": 40,
+      "price": 82,
       "client": {
-        "name": "Damian",
+        "name": "Person",
         "phone": "+123",
-        "street": "Willow Str.",
-        "city": "Leeds"
+        "street": "Test Street",
+        "city": "York Shire"
       },
       "id": 1
-    },
-    {
-      "body": [
-        "Kebab L",
-        "Kebab M",
-        "Pepsi",
-        "7up"
-      ],
-      "price": 74,
-      "client": {
-        "name": "Marek",
-        "phone": "+125",
-        "street": "Znosna",
-        "city": "Radgoszcz"
-      },
-      "id": 2
-    },
-    {
-      "body": [
-        "Kebab M",
-        "Kebab M",
-        "7up"
-      ],
-      "price": 59,
-      "client": {
-        "name": "vrht",
-        "phone": "+456",
-        "street": "htnfth 45",
-        "city": "htrhr"
-      },
-      "id": 3
-    },
-    {
-      "body": "",
-      "price": 0,
-      "client": {
-        "name": "vrht",
-        "phone": "+456",
-        "street": "htnfth 45",
-        "city": "htrhr"
-      },
-      "id": 4
     }
   ]
 }
