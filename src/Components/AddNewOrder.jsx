@@ -29,7 +29,8 @@ export const AddNewOrder = () => {
     const [order, setOrder] = useState([]);
     const [price, setPrice] = useState(0);    
     const [value, setValue] = useState("");
-    const [state, setState] = useState(false)
+    const [state, setState] = useState(false);
+    const [isFinished, setIsFinished] = useState(false)
 
     const handleAdd = () => {
 
@@ -53,7 +54,6 @@ export const AddNewOrder = () => {
         if(value){ 
         setOrder(prev => [...prev, value])
         
-        // to cos dziwngeo
         Object.entries(available).forEach(([key, val]) => {
             if (key === value) {
                 return setPrice(price => price + val)
@@ -101,17 +101,19 @@ export const AddNewOrder = () => {
 
             {state && <Message message={"Number not found in database"} setState={setState} link={true}/>}
 
+
             {isValid && 
             <div className={styles.formField}>
+                <div className={styles.buttonsField}>
+                    <button onClick={addToOrder} className={styles.add}>Add</button>
+                    <button onClick={handleClear} className={styles.clear}>C</button>
+                    <button type={'submit'} onClick={handleAdd} className={styles.submit}>Submit Order</button>
+                </div>
                 <select name="set-order" id="orderSelect" className={styles.input} value={value} onChange={e => {
                     setValue(e.target.value)
                     }}>
-                        {/* entries(avilable) value to cena a opcja to key z elementu */}
                     {Object.keys(available).map(el => <option value={el} key={el}>{el}</option>)}
                 </select>
-                <button onClick={addToOrder} className={styles.add}>Add</button>
-                <button onClick={handleClear} className={styles.clear}>C</button>
-                <button type={'submit'} onClick={handleAdd} className={styles.submit}>Submit Order</button>
             </div>}
             <div className={styles.final}>
                     {order && order.map(element => <p>{element}</p>)}

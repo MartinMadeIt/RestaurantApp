@@ -9,7 +9,7 @@ import { IoPersonAdd } from "react-icons/io5";
 import Message from './Message'
 import getAllDatas from '../Controllers/getAllDatas'
 
-const regexNumber =  "^[\+][(]?[0-9]{1}[)]?[-\s\.]?[0-9]{1}[-\s\.]?[0-9]{1}$"
+const regexNumber =  "^[1-9]{3}?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3}$"
 const yupSchema = yup.object().shape({
     name: yup.string().min(3).required(),
     surname: yup.string().required(),
@@ -18,7 +18,7 @@ const yupSchema = yup.object().shape({
     region: yup.string().required(),
     photoURL: yup.string().url(),
     email: yup.string().email("Sure that email is correct ?").required(),
-    phone: yup.string().matches(regexNumber, "Starts with +, followed with 11 nums").required(),
+    phone: yup.string().matches(regexNumber, "9 nums. No invalid ones please").required(),
     age: yup.number().min(18, "Our clients have to be mature").max(120, "Yep. Try again")
 })
 
@@ -29,7 +29,6 @@ function AddNewClient() {
     const [exist, setExist] = useState(false)
     const [clients, setClients] = useState([])
 
-//  TODO ? useQuery
 
 useEffect(() => {
     getAllDatas("clients")

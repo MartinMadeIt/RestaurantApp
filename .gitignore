@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/.prettierrc
 /db.json
 /.pnp
 .pnp.js

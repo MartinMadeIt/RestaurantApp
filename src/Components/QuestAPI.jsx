@@ -7,7 +7,6 @@ import HomeBtn from './HomeBtn';
 
 const QuestAPI = () => {
 
-    // const URL = "http://localhost:3000"
     const { orderId }  = useParams()
     const [data,setData]=useState([])
 
@@ -22,17 +21,17 @@ const QuestAPI = () => {
     <div className={styles.container}>
         <HomeBtn />
         <p className={styles.number}>{data.id}</p>
+        
+        {data.client ? <p className={styles.person}>{data.client.name}, {data.client.city}, {data.client.phone}</p> : <p>No client data</p>}
+        <p className={styles.desc}>Order:</p>
         <div className={styles.card}>
-
-        {data.client ? <p className={styles.client}>Client: {data.client.name}, {data.client.city}, {data.client.phone}</p> : <p>No client data</p>}
-
+     
           <div className={styles.order}>
               {data.body ? data.body.map((el) => <p key={el.id} className={styles.orderItem}>{el}</p>) : <p>Brak produktów</p>}
           </div> 
-
-           
-          <p className={styles.price}>{data?.price} PLN</p>
+      
         </div> 
+        <p className={styles.price}>{data?.price} PLN</p>
     </div>
 
   )

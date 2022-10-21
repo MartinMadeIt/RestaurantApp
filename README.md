@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Restaurant Manage App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### What's the purpose ?
+Restaurant Manage App is React App that visualize how to manage orders in Restaurant.
 
-## Available Scripts
 
-In the project directory, you can run:
+### Why I created this App ?
+First version of this App was just an exercise to skill some libraries in React and to improve my React skills.
+More time I spended on this exercises - more features I watnted to implement - and finally it get shape like little React project, rather than just exercise.
 
-### `npm start`
+### Will it be release as commercial App for Restaurants ?
+No. It's just a little project that is combination of simple exercise, imagination, some skills and a lot of fun. 
+First of all, one of original purposes to to this App was to skill libraries like json-server. "Database" of this App 
+is simple .json file and json-server on localhost so it can't be a commercial App that manage sensitive datas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The App won't be an App that is used in Restaurants but feel free to download it for your child and tell them to manage their Restaurant the best that they can :)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# Usage & Installation 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation 
 
-### `npm run build`
+1. Download project from Github repository. Check out link below to see the way to do it:
+```link
+https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+```
+2. Open downloaded file in your code editor. Now you can download all neccesery packages. Depends on what software you're using - you have to 
+take different steps.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    If you're using npm CLI, paste a command in terminal:
+    ```
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. After installing all of neccesery packages you are ready to initialize json-server :
+```
+ json-server --watch db.json
+```
 
-### `npm run eject`
+If you are using npm and it doesn't work try :
+```
+npx json-server --watch db.json
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+!! Remember to start json-server on **localhost:3000** 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. After this you can open another terminal window. Chceck if you are in correct place (you should be in project RestaurantApp). If you're not :
+```
+cd ReastaurantApp
+```
+If you are in RestauranApp just type : 
+```
+npm start 
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Terminal will ask you if you want to open project in localhost port other than 3000. Type y and wait till the process get done.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+If it will get done and it won't open automatically - open link that will be shown process status (localhost:port) by clicking 
+- ctrl + left click on Windows
+- command + click on Mac
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Explore the App
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

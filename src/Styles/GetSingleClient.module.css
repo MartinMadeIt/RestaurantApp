@@ -15,3 +15,59 @@
 
     color: var(--font-color-dark);
 }
+
+
+.clientDatas {
+    box-sizing: border-box;
+    width: 400px;
+    /* min-width: 400px; */
+    height: 600px;
+    /* min-height: 500px; */
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255, 0.525);
+    border-radius: 12px;
+
+    color: #171717;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+}
+
+.address,
+.contact {
+    position: relative;
+    font-size: 26px;
+    width: 100%;
+    height: 30%;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.address > p,
+.contact > p {
+    margin: 5px;
+}
+
+.icon {
+    position: absolute;
+    top: 30%;
+    right: 15%;
+
+    font-size: 42px;
+
+    color: #17171786;
+}

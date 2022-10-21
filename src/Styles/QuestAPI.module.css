@@ -2,6 +2,7 @@
 .containerDark {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 
     position: absolute;
@@ -19,18 +20,24 @@
 
 .card {
     /* position: relative; */
+    position: relative;
     min-width: 400px;
-    width: 70%;
-    min-height: 300px;
+    max-height: 500px;
     border-radius: 12px;
-    /* padding: 20px; */
-    background-color: rgba(255, 255, 255, 0.637);
-    color: black;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.319);
+    color: rgb(254, 254, 254);
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
 
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+
+    overflow: scroll;
 }
 
 .number {
@@ -42,35 +49,44 @@
     font-size: 100px;
     font-weight: 700;
 }
-/* 
-.order {
-    width: 60%;
-    min-width: 200px; */
-    /* border: 1px solid red; */
-    /* font-size: 20px;
-    padding: 20px;
 
-    line-height: 5px;
+.person {
+    position: absolute;
+    top: 20px;
+    left: 30%;
 
-    display: grid; 
-    grid-template-columns: repeat(2, 30%);
-    grid-template-rows: repeat(4, 25px);
-    column-gap: 100px;
-
-    justify-content: center;
-    text-align: center;
-} */
-
-.desc {
-    text-align: center;
-    font-weight: 700;
-
-    font-size: 36px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 }
 
 .price {
+    /* position: absolute;
+    bottom: -80px;
+    left: 10px; */
+    
     color: rgba(3, 162, 3, 0.734);
-    font-weight: 700;
-    font-size: 28px;
+    font-weight: 300;
+    font-size: 40px;
     line-height: 10px;
+
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.desc {
+    /* position: absolute;
+    top: -140px;
+    left: 10px; */
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+
+    font-size: 60px;
+
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
 }

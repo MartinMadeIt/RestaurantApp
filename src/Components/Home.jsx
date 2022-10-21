@@ -7,8 +7,8 @@ function Home() {
     <div className={styles.container}>
       <div className={styles.img}></div>
       <div className={styles.navSide}>
-        <div className={styles.tile}><Link to='/nav'>ORDERS MENU</Link></div>
-        <div className={styles.tile}><Link to='/clients'>CLIENTS MENU</Link></div>
+        <Link to='/nav' className={styles.tile}>ORDERS MENU</Link>
+        <Link to='/clients' className={styles.tile}>CLIENTS MENU</Link>
       </div>
     </div>
   )

@@ -7,11 +7,9 @@
     height: 100vh;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-}
-
-.container {
+    gap: 5%;
     background-color: var(--bg-color-dark);
 }
 
@@ -23,55 +21,79 @@
 
 .formField {
 
-    width: 100vw;
+    width: 60%;
     height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10%;
 }
 
 .input {
-    width: 180px;
+    width: 350px;
     height: 60px;
     border-radius: 8px;
     font-size: 24px;
 }
 
-.add {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    cursor: pointer;
+
+.buttonsField {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
 }
 
-.add:hover {
+.add,
+.submit,
+.clear {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.101);
+    color: aliceblue;
+    font-size: 36px;
+
+    border-radius: 10px;
+}
+
+.add {
+    border: 1px solid green;
+}
+
+.clear {
+    border: 1px solid red;
+}
+
+.submit {
+    border: none;
+    background-color: rgba(255, 0, 0, 0.233);
+}
+
+.add:hover,
+.submit:hover,
+.clear:hover {
     transform: scale(.9);
 }
 
 .add:active {
-    background-color: rgb(120, 196, 120);
+    box-shadow: inset 0 0 20px 17px #00800042;
 }
 
-.submit {
-    width: 100px;
-    height: 30px;
-    border-radius: 8px;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 0 13px 3px black;
+.clear:active {
+    box-shadow: inset 0 0 20px 17px #80000042;
+
 }
+
 
 .final {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-
-    width: 15vw;
-    height: 400px;
+    width: 20%;
+    height: 100%;
 
     overflow: hidden;
     color: rgba(240, 248, 255, 0.372);
@@ -81,6 +103,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.phone {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--bg-color-dark);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .inputPhone {

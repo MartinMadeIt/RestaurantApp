@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import getSingleItem from '../Controllers/getSingleItem';
 import styles from '../Styles/GetSingleClient.module.css'
 import HomeBtn from './HomeBtn';
+import { FaLocationArrow, FaPhoneAlt } from "react-icons/fa";
 
 function GetSingleClient() {
 
@@ -19,8 +20,18 @@ function GetSingleClient() {
         <div className={styles.container}>
             <HomeBtn />
             <div className={styles.clientDatas}>
-                <p>{data.name} {data.surname}</p>
-                <p>{data.street}</p>
+                <p className={styles.name}>{data.name} {data.surname}</p>
+                <div className={styles.address}>
+                    <p>{data.street}</p>
+                    <p>{data.city}</p>
+                    <p>{data.region}</p>
+                    <div className={styles.icon}><FaLocationArrow /></div>
+                </div>
+                <div className={styles.contact}>
+                    <p>{data.email}</p>
+                    <p>{data.phone}</p>
+                    <div className={styles.icon}><FaPhoneAlt /></div>
+                </div>
             </div>
         </div>
     )
