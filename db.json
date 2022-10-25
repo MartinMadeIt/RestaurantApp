@@ -1,52 +1,16 @@
 {
   "clients": [
     {
-      "name": "Person",
-      "surname": "Example",
-      "street": "Test Street",
-      "city": "York Shire",
-      "region": "TEX",
-      "photoURL": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-      "email": "perex@ex.eu",
-      "phone": "+123",
-      "age": "45",
-      "id": 1
-    },
-    {
-      "name": "Zenon",
-      "surname": "Buzka",
-      "street": "Witasa",
-      "city": "Warszawa",
-      "region": "WWA",
-      "photoURL": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-      "email": "ww@op.pl",
-      "phone": "+125",
-      "age": "24",
-      "id": 2
-    },
-    {
-      "name": "Genres",
-      "surname": "Spicegirl",
-      "street": "Lincoln Street",
-      "city": "New York",
-      "region": "NYC",
-      "photoURL": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-      "email": "genspice@nyt.com",
-      "phone": "678567243",
-      "age": "46",
-      "id": 3
-    },
-    {
       "name": "Damien",
       "surname": "Sagasek",
       "street": "Gdanska",
       "city": "Bydgoszcz",
       "region": "CBY",
       "photoURL": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-      "email": "damsag@onet.pl",
-      "phone": "123456789",
-      "age": "27",
-      "id": 4
+      "email": "perex@ex.eu",
+      "phone": "+123",
+      "age": "45",
+      "id": 1
     }
   ],
   "orders": [
