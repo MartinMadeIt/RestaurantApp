@@ -1,0 +1,17 @@
+.btn {
+    position: absolute;
+    top: 10%;
+    right: 9%;
+
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.474);
+    transition: 150ms;
+    cursor: pointer;
+
+    background-color: transparent;
+    border: none;
+}
+
+.btn:hover {
+    color: white;
+}

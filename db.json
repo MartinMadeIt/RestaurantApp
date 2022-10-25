@@ -35,56 +35,38 @@
       "phone": "678567243",
       "age": "46",
       "id": 3
+    },
+    {
+      "name": "Damien",
+      "surname": "Sagasek",
+      "street": "Gdanska",
+      "city": "Bydgoszcz",
+      "region": "CBY",
+      "photoURL": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+      "email": "damsag@onet.pl",
+      "phone": "123456789",
+      "age": "27",
+      "id": 4
     }
   ],
   "orders": [
     {
       "body": [
-        "Pancakes",
-        "Kebab L",
         "Kebab S",
-        "7up",
-        "Mirinda"
+        "Pizza",
+        "Add topping",
+        "Add topping",
+        "Add topping",
+        "Pepsi"
       ],
-      "price": 82,
+      "price": 64,
       "client": {
-        "name": "Person",
-        "phone": "+123",
-        "street": "Test Street",
-        "city": "York Shire"
+        "name": "Damien",
+        "phone": "123456789",
+        "street": "Gdanska",
+        "city": "Bydgoszcz"
       },
       "id": 1
-    },
-    {
-      "body": [
-        "Pepsi",
-        "Kebab M",
-        "Pancakes"
-      ],
-      "price": 48,
-      "client": {
-        "name": "Genres",
-        "phone": "678567243",
-        "street": "Lincoln Street",
-        "city": "New York"
-      },
-      "id": 2
-    },
-    {
-      "body": [
-        "Add topping",
-        "Oatmeal",
-        "Kebab S",
-        "Mirinda"
-      ],
-      "price": 38,
-      "client": {
-        "name": "Zenon",
-        "phone": "+125",
-        "street": "Witasa",
-        "city": "Warszawa"
-      },
-      "id": 3
     }
   ]
 }

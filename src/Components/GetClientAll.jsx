@@ -5,6 +5,7 @@ import styles from '../Styles/GetClient.module.css'
 import HomeBtn from './HomeBtn'
 import getAllDatas from '../Controllers/getAllDatas'
 import DescriptionText from './DescriptionText'
+import GoBack from './GoBack'
 
 const destination = "clients"
 
@@ -20,6 +21,7 @@ const GetClientAll = () => {
     return (
         <div className={styles.container}>
             <HomeBtn />
+            <GoBack />
             <DescriptionText site="List" />
             <div className={styles.list}>
                 {data.map(element => <Link to={`/${destination}/clientlist/${element.id}`} key={element.id} className={styles.nameOfClient}> {element.name} {element.surname}</Link>)}

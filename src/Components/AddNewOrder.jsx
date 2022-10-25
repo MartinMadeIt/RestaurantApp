@@ -5,6 +5,8 @@ import { postData } from '../Controllers/postDatas'
 import getAllDatas from '../Controllers/getAllDatas'
 import { TbPhoneCheck } from "react-icons/tb";
 import Message from './Message';
+import GoBack from './GoBack';
+import { useNavigate } from 'react-router-dom';
 
 
 const available =  {
@@ -31,6 +33,7 @@ export const AddNewOrder = () => {
     const [value, setValue] = useState("");
     const [state, setState] = useState(false);
     const [isFinished, setIsFinished] = useState(false)
+    const navigate = useNavigate();
 
     const handleAdd = () => {
 
@@ -41,11 +44,12 @@ export const AddNewOrder = () => {
                 name: client.name,
                 phone: client.phone,
                 street: client.street,
-                city: client.city}}).then((data) => {
-            console.log("succes", data)
-        }).finally(()=>{
+                city: client.city}})
+            .finally(()=>{
             setOrder([])
             setPrice(0)
+            setIsFinished(true)
+            navigate(-1)
         })
 
     };
@@ -92,6 +96,7 @@ export const AddNewOrder = () => {
 
             {!isValid && 
             <div className={styles.phone}>
+                <GoBack />
                 <form onSubmit={handleVerify}>
                     <input type="text" className={styles.inputPhone} value={phone} onChange={e => setPhone(e.target.value)} placeholder='Phone number'/>
                     <button type='submit' className={styles.submitBtn}><TbPhoneCheck /></button>
@@ -100,6 +105,7 @@ export const AddNewOrder = () => {
             }
 
             {state && <Message message={"Number not found in database"} setState={setState} link={true}/>}
+            {isFinished && <Message message={"Submitted and ordered"} setState={setIsFinished} positive/>}
 
 
             {isValid && 
