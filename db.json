@@ -1,36 +1,7 @@
 {
   "clients": [
-    {
-      "name": "Damien",
-      "surname": "Sagasek",
-      "street": "Gdanska",
-      "city": "Bydgoszcz",
-      "region": "CBY",
-      "photoURL": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-      "email": "perex@ex.eu",
-      "phone": "+123",
-      "age": "45",
-      "id": 1
-    }
+ 
   ],
   "orders": [
-    {
-      "body": [
-        "Kebab S",
-        "Pizza",
-        "Add topping",
-        "Add topping",
-        "Add topping",
-        "Pepsi"
-      ],
-      "price": 64,
-      "client": {
-        "name": "Damien",
-        "phone": "123456789",
-        "street": "Gdanska",
-        "city": "Bydgoszcz"
-      },
-      "id": 1
-    }
   ]
 }
