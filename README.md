@@ -87,7 +87,5 @@ If it will get done and it won't open automatically - open link that will be sho
 # Future plans for Restaurant App
 Even if it is just a little project I try to make it really as good as it can be. So after finishing current project Reastaurant App will await for next releases with some:
 
-### fix: refactor some code that might look cleaner 
-### feat:
-- Dark mode
-- Login Page
+* fix: refactor some code that might look cleaner 
+* feat: Dark mode, Login Page
