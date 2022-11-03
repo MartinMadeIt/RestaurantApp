@@ -4,10 +4,6 @@ import styles from '../Styles/HomeBtn.module.css'
 import { Link } from 'react-router-dom';
 
 
-function HomeBtn() {
-  return (
-    <Link className={styles.btn} to='/'><GoHome /></Link>
-  )
-}
+const HomeBtn = () => <Link className={styles.btn} to='/'><GoHome /></Link>
 
 export default HomeBtn

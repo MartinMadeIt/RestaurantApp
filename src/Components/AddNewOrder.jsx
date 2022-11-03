@@ -24,16 +24,16 @@ const available =  {
 
 export const AddNewOrder = () => {
 
-    const [data, setData] = useState([])
-    const [client, setClient] = useState([]);
-    const [isValid, setIsValid] = useState(false)
-    const [phone, setPhone] = useState()
-    const [order, setOrder] = useState([]);
-    const [price, setPrice] = useState(0);    
-    const [value, setValue] = useState("");
-    const [state, setState] = useState(false);
-    const [isFinished, setIsFinished] = useState(false)
-    const navigate = useNavigate();
+    const [data, setData] = useState([]),
+         [client, setClient] = useState([]),
+         [isValid, setIsValid] = useState(false),
+         [phone, setPhone] = useState(),
+         [order, setOrder] = useState([]),
+         [price, setPrice] = useState(0),   
+         [value, setValue] = useState(""),
+         [state, setState] = useState(false),
+         [isFinished, setIsFinished] = useState(false),
+        navigate = useNavigate();
 
     const handleAdd = () => {
 
@@ -78,7 +78,7 @@ export const AddNewOrder = () => {
 
     const handleVerify = (e) => {
         e.preventDefault();
-        const finded =data.find(el => {return phone === el.phone})
+        const finded = data.find(el => {return phone === el.phone})
         if(finded) {
             setClient(finded)
             setIsValid(true)

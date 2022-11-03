@@ -12,17 +12,19 @@ function GetOrder() {
     const {data, isLoading, error} = useQuery([destination], () => getAllDatas(destination))
 
     if(error) {
-        return (    <div className={styles.container}>
-                        <p className={styles.state}>Cannot get orders</p>
-                    </div>
-                    )
+        return (
+            <div className={styles.container}>
+                <p className={styles.state}>Cannot get orders</p>
+            </div>
+                )
     }
 
     if(isLoading) {
-        return (    <div className={styles.container}>
-                        <p className={styles.state}>Loading your datas</p>
-                    </div>
-                    )
+        return (    
+            <div className={styles.container}>
+                <p className={styles.state}>Loading your datas</p>
+            </div>
+                )
     }
 
     return (

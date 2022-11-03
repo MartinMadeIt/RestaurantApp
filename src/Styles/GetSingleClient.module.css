@@ -8,32 +8,28 @@
 
     background-color: var(--bg-color-dark);
 
+    color: var(--font-color-dark);
+}
+
+.container,
+.clientDatabase {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    color: var(--font-color-dark);
 }
-
 
 .clientDatas {
     box-sizing: border-box;
     width: 400px;
-    /* min-width: 400px; */
     height: 600px;
-    /* min-height: 500px; */
     padding: 20px;
 
     background-color: rgba(255, 255, 255, 0.525);
     border-radius: 12px;
 
     color: #171717;
-
-    display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
 }
 
 .name {

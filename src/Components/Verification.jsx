@@ -17,7 +17,7 @@ function Verification() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const finded =datas.find(el => {return value === el.phone})
+        const finded = datas.find(el => value === el.phone)
         if(finded) {
             console.log(finded);
             setClient(finded)}

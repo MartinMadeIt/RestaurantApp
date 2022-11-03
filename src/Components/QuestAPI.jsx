@@ -10,8 +10,8 @@ import { AiOutlineDelete } from "react-icons/ai";
 
 const QuestAPI = () => {
 
-    const { orderId }  = useParams()
-    const [data,setData]=useState([])
+    const { orderId }  = useParams();
+    const [data,setData]=useState([]);
     const navigate = useNavigate();
     const [notify, setNotify] = useState(false);
 

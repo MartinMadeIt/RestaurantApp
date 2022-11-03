@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 const Message = ({message, setState, positive=false, link=false}) => {
 
-
     useEffect(() => {
         setTimeout(() => {setState(false)}, 10000)
     })

@@ -1,3 +1,11 @@
+.container,
+.navSide,
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container {
     position: absolute;
     top: 0;
@@ -8,9 +16,7 @@
 
     background-color: var(--bg-color-dark);
 
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
 
     overflow: hidden;
 }
@@ -36,9 +42,6 @@
     height: 100vh;
     width: 40%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     gap: 40px;
 }
@@ -51,9 +54,6 @@
 
     border: 1px solid rgba(255, 255, 255, 0.672);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 4px;
     cursor: pointer;
 
@@ -98,10 +98,7 @@ a {
         backdrop-filter: blur(2px);
     }
 
-    .imgSide {
-        display: none;
-    }
-
+    .imgSide
     .img {
         display: none;
     }

@@ -1,9 +1,12 @@
-.container {
+.container,
+.card {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
 
+.container {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,16 +32,19 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 
-    display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
+}
 
+.number,
+.person,
+.price,
+.desc  {
+    position: absolute;
+    font-size: 40px;
 }
 
 .number {
     margin: 0;
-    position: absolute;
     top: 20px;
     left: 10px;
 
@@ -47,23 +53,19 @@
 }
 
 .person {
-    position: absolute;
     top: 20px;
     left: 30%;
 
-    font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
 }
 
 .price {
-    position: absolute;
     bottom: 10px;
     left: 10px;
     
     color: rgba(3, 162, 3, 0.734);
     font-weight: 300;
-    font-size: 40px;
     line-height: 10px;
 
     width: 25%;
@@ -73,8 +75,6 @@
 }
 
 .desc {
-
-    position: absolute;
     top: -70px;
     left: 5px;
 
@@ -84,7 +84,6 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
 
-    font-size: 40px;
     background-image: linear-gradient(to bottom, #171717, #141414);
 
     width: 25%;
@@ -112,6 +111,14 @@
     text-shadow: 0 0 10px red;
 }
 
+.notification,
+.notiCard,
+.notiButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .notification {
     position: absolute;
     top: 0;
@@ -121,10 +128,6 @@
     height: 100vh;
     backdrop-filter: blur(6px);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     z-index: 30;
 }
 
@@ -132,19 +135,17 @@
     width: 300px;
     height: 200px;
     color: #141414;
-    display: flex;
+
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+
     background-color: #fff;
     border-radius: 12px;
 }
 
 .notiButtons {
     width: 100%;
-    display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .notiButtons > button {
