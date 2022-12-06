@@ -84,7 +84,3 @@ If it will get done and it won't open automatically - open link that will be sho
 
 
 
-# Future plans for Restaurant App
-Even if it is just a little project I try to make it really as good as it can be. So after finishing current project Reastaurant App will await for next releases with some:
-
-* feat: Dark mode, Login Page, delete buttons in Client Database View and Single Client View, add delete button in list of added to order items
